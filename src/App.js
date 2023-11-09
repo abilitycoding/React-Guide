@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import UseStateUseEffect from "../src/Components/useStateUseEffect";
+import Home from "./Components/Home";
+import ApiTutorial from "./Components/Api-Tutorial";
+import Transition from "./Components/CSS Animation Transition/Transition";
+import Animation from "./Components/CSS Animation Transition/Animation";
+import EventHandling from "./Components/EventHandling/EventHandling";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/useState-useEffect" element={<UseStateUseEffect />} />
+          <Route path="/api" element={<ApiTutorial />} />
+          <Route path="/transition" element={<Transition />} />
+          <Route path="/animation" element={<Animation />} />
+          <Route path="/event-handling" element={<EventHandling />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,12 @@
+.main-container {
+  background-image: url("https://www.imageshine.in/uploads/gallery/Road-with-Sky-wallpaper-for-editing.jpg");
+  background-size: cover;
+}
+
+.para-content {
+  background-color: white;
+}
+
+.text-transparent {
+  background-color: transparent !important;
+}

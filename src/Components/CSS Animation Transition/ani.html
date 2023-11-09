@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+      #hover-card {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Your content goes here -->
+
+    <div id="hover-card">
+      <img
+        width="100"
+        height="100"
+        src="https://meatandeat.in/wp-content/uploads/2023/07/facebook-design002.jpg"
+        alt=""
+      />
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const card = document.getElementById("hover-card");
+        const scrolled = window.scrollY;
+
+        // Adjust the translationY based on how much you want the card to move
+        card.style.transform = `translateY(-${scrolled}px)`;
+      });
+    </script>
+  </body>
+</html>

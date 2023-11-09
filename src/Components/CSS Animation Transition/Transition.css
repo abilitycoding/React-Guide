@@ -1,0 +1,32 @@
+/* 1. Transition Color */
+#transitionColor {
+  color: #333; /* Initial text color */
+  transition: color 2s; /* Color transition with a duration of 0.3 seconds */
+}
+
+#transitionColor:hover {
+  color: #f00; /* Color to change to on hover */
+}
+
+/* 2. Transition font size */
+#transitionSize {
+  font-size: 16px; /* Initial font size */
+  transition: font-size 0.3s; /* Font size transition with a duration of 0.3 seconds */
+}
+
+#transitionSize:hover {
+  font-size: 24px; /* Font size to change to on hover */
+}
+
+/* 3. Transition opacity */
+#transitionOpacity {
+  opacity: 1; /* Initial opacity (fully visible) */
+  transition: opacity 0.3s; /* Opacity transition with a duration of 0.3 seconds */
+}
+
+#transitionOpacity:hover {
+  opacity: 0.5; /* Opacity to change to on hover (semi-transparent) */
+}
+
+
+
